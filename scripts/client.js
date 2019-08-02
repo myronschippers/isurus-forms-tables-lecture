@@ -1,7 +1,6 @@
 console.log('FORMS and TABLES!!!');
 
-// Mythic Creatures
-
+// Fantastic Creatures List
 const fantasticCreatures = [
     {
         name: 'Niffler',
@@ -40,4 +39,10 @@ const fantasticCreatures = [
         color: 'Silver',
     },
 ];
+
+$(document).ready(onReady);
+
+function onReady() {
+    // render a table with the `fantasticCreatures` data
+}
 
