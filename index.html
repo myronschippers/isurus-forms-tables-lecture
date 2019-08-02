@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/client.js"></script>
     <title>Tables and Forms</title>
@@ -12,16 +13,48 @@
     <h1>Fantastic Creatures</h1>
 
     <!-- Form data collection method 1 -->
-    <form>
+    <!-- <form class="js-form-creature">
         <input name="name" type="text" placeholder="Name" />
         <input name="magicAbility" type="text" placeholder="Magical Abilities" />
         <input name="dangerLevel" type="number" placeholder="Danger Level" />
         <input name="color" type="text" placeholder="Color" />
         <button>Add Fantastic Creature</button>
-    </form>
+    </form> -->
+
+    <div>
+        <input class="js-input-name" name="name" type="text" placeholder="Name" />
+        <input class="js-input-magic" name="magicAbility" type="text" placeholder="Magical Abilities" />
+        <input class="js-input-danger" name="dangerLevel" type="number" placeholder="Danger Level" />
+        <input class="js-input-color" name="color" type="text" placeholder="Color" />
+        <button class="js-btn-creature">Add Fantastic Creature</button>
+    </div>
 
     <h2>Recorded Fantastic Creatures</h2>
+    <div class="js-demo"></div>
     <!-- Make a Table for our Fantastic Creatures -->
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Magic Ability</th>
+                <th>Danger Level</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody class="js-table-data">
+            <tr>
+                <td> -- </td>
+                <td> -- </td>
+                <td> -- </td>
+                <td> -- </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Great Creatures of our making</td>
+            </tr>
+        </tfoot>
+    </table>
 
 </body>
 </html>
