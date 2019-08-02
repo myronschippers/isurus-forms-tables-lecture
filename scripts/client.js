@@ -43,6 +43,7 @@ const fantasticCreatures = [
 $(document).ready(onReady);
 
 function onReady() {
+    console.log('in onReady');
     // render a table with the `fantasticCreatures` data
 }
 

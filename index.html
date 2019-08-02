@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/client.js"></script>
-    <title>Table</title>
+    <title>Tables and Forms</title>
 </head>
 <body>
     <h1>Fantastic Creatures</h1>
 
-    <div>
-        <input type="text" placholder="Name" />
-        <textarea placeholder="Magical Abilities"></textarea>
-        <input type="number" placeholder="Danger Level" min="0" max="10" />
-        <input type="text" placeholder="Color" />
+    <!-- Form data collection method 1 -->
+    <form class="js-form-creature">
+        <input name="name" type="text" placeholder="Name" />
+        <input name="magicAbility" type="text" placeholder="Magical Abilities" />
+        <input name="dangerLevel" type="number" placeholder="Danger Level" />
+        <input name="color" type="text" placeholder="Color" />
         <button>Add Fantastic Creature</button>
-    </div>
+    </form>
 
     <h2>Recorded Fantastic Creatures</h2>
     <!-- Make a Table for our Fantastic Creatures -->
